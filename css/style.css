@@ -139,3 +139,26 @@ table {
 
 
 /*?========== LOMPAS PROJECT========= */
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-list {
+    display: flex;
+    gap: 16px;
+}
+
+.list {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #232121;
+}
