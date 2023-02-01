@@ -148,6 +148,7 @@ table {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 5px;
 }
 
 .menu-list {
@@ -161,4 +162,28 @@ table {
     line-height: 19px;
     text-transform: uppercase;
     color: #232121;
+    position: relative;
+}
+
+.list::after {
+    content: "";
+    display: block;
+    background: rgb(197, 9, 61);
+    height: 4px;
+    width: 100%;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transform: scaleX(0);
+    transition: all 0.45s ease;
+}
+
+.list:hover::after {
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+.list:hover {
+    color: blue;
 }
